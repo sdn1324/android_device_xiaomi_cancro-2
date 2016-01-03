@@ -21,13 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/cancro/cancro.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/aokp/configs/nfc_enhanced.mk)
 
-# Inherit some common CM stuff (mini)
-$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+# Inherit some common aokp stuff (mini)
+$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
 
 # Product configuration
-PRODUCT_NAME := cm_cancro
+PRODUCT_NAME := aokp_cancro
 PRODUCT_DEVICE := cancro
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
@@ -39,7 +39,7 @@ TARGET_VENDOR_PRODUCT_NAME := cancro
 TARGET_VENDOR_DEVICE_NAME := MI3W
 
 # Unofficial build id
-TARGET_UNOFFICIAL_BUILD_ID := audahadi
+TARGET_UNOFFICIAL_BUILD_ID := sdn
 
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=cancro PRODUCT_NAME=cancro
 
